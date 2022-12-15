@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
 
 const ws = new WebSocket("ws://localhost:3000/cable");
 
@@ -31,7 +31,6 @@ function App() {
 
     const message = data.message;
     setMessagesAndScrollDown([...messages, message]);
-    console.log(message);
   };
 
   useEffect(() => {
